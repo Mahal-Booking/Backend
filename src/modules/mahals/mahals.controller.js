@@ -112,6 +112,7 @@ export const getAllMahals = async (req, res, next) => {
 
         res.json({
             success: true,
+            mahals: mahals,
             data: mahals,
             pagination: {
                 page: parseInt(page),
